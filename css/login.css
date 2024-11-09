@@ -29,10 +29,17 @@ header {
     z-index: 99;
 }
 
-.logo {
-    font-size: 2em;
-    color: #fff;
-    user-select: none;
+.logo{
+    color: #fffdfc;
+    font-size: 25px;
+    font-weight: 800;
+    margin: auto 0;
+}
+
+#logo-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
 .navigation a {

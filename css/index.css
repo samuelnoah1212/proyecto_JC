@@ -8,6 +8,10 @@
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Poppins", sans-serif;
 }
@@ -175,6 +179,7 @@ color: #ce9678;
 
 .services-content{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
@@ -205,6 +210,7 @@ color: #ce9678;
     text-align: center;
     color: #fff; 
     max-width: 200px; 
+    margin: 20px;
 }
 
 .services-1 img{
