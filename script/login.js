@@ -9,13 +9,14 @@ function leerDatos(params) {
   
   function Login() {
     leerDatos();
-    const usuarioGuardado = localStorage.getItem("usuario");
-    const contraseñaGuardada = localStorage.getItem("contraseña");
+    const usuarioGuardado = localStorage.getItem("Correo");
+    const contraseñaGuardada = localStorage.getItem("Contraseña");
   
 
   //Verificar si las credenciales coinciden
   if (email === usuarioGuardado && password === contraseñaGuardada) {
     alert( "Inicio de sesión exitoso. ¡Bienvenido!" )
+    window.location.href = "index.html"
   } else {
     alert("Correo o contraseña incorrectos.")
   }
@@ -25,6 +26,6 @@ function leerDatos(params) {
 formularioLogin.addEventListener('submit',(e)=>{
     e.preventDefault();
     Login()
-    window.location.href = "index.html"
+
 })
   
